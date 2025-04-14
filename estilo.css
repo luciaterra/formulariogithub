@@ -1,0 +1,121 @@
+body {
+    font-family: sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+}
+
+.container h1 {
+    text-align: center;
+}
+
+.container label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.container input[type="text"],
+.container input[type="email"],
+.container input[type="date"],
+.container select {
+    width: calc(100% - 12px);
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.container input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+}
+
+.container input[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+.style-buttons {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 10px;
+}
+
+.style-buttons button {
+    padding: 8px 12px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.style-buttons button#style-button-1 {
+    background-color: #008CBA;
+    color: white;
+}
+
+.style-buttons button#style-button-1:hover {
+    background-color: #0077A3;
+}
+
+.style-buttons button#style-button-2 {
+    background-color: #f44336;
+    color: white;
+}
+
+.style-buttons button#style-button-2:hover {
+    background-color: #d32f2f;
+}
+
+/* Estilo Oscuro */
+body.high-contrast {
+    background-color: #000;
+    color: #fff;
+}
+
+.container.high-contrast {
+    background-color: #333;
+    color: #fff;
+    border: 1px solid #fff;
+}
+
+.container.high-contrast input[type="text"],
+.container.high-contrast input[type="email"],
+.container.high-contrast input[type="date"],
+.container.high-contrast select {
+    background-color: #555;
+    color: #fff;
+    border: 1px solid #fff;
+}
+
+.container.high-contrast input[type="submit"] {
+    background-color: #ffeb3b;
+    color: #000;
+}
+
+.container.high-contrast input[type="submit"]:hover {
+    background-color: #fdd835;
+}
+
+.style-buttons button#style-button-2 {
+    background-color: #ff9800;
+}
+
+.style-buttons button#style-button-2:hover {
+    background-color: #fb8c00;
+}
